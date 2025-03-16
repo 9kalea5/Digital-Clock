@@ -1,9 +1,10 @@
+import FrontPage from "./FrontPage"
 
 
 function App() {
   return (
     <>
-      
+      <FrontPage />
     </>
   )
 }
