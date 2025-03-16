@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import "./frontPage.css"
 export default function FrontPage() {
     const [nowTime, setNowTime] = useState(new Date())
     useEffect(() => {
@@ -7,8 +7,8 @@ export default function FrontPage() {
         return () => clearInterval(timer)
     }, [])
     return (
-        <div>
-            
+        <div className='clock-container'>
+            {nowTime.toLocaleTimeString()}
         </div>
     )
 }
